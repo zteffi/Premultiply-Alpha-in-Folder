@@ -1,5 +1,5 @@
 # Premultiply-Alpha-in-Folder
-####Make sure you have backup of the folder, since this tool rewrites all the images!
+### Make sure you have backup of the folder, since this tool rewrites all the images!
 
 Python script that recursively premultiplies alpha for specified folder 
 
