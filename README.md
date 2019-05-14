@@ -3,7 +3,7 @@
 
 Python script that recursively premultiplies rgb values by alpha for all .png images in a folder, i.e.:
 pixel_in = (r,g,b,a)
-pixel_out = (r*a, g*a, b*a)
+pixel_out = (r * a, g * a, b * a)
 
 
 ## Installing dependencies
