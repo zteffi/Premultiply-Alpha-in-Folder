@@ -13,13 +13,13 @@ def premultiplyAlpha(img):
     return Image.fromarray(matrix)
 
 
-rootdir = sys.argv[1]
+rootdir = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
 
 for root, subdirs, files in os.walk(rootdir):
     
     for filename in files:
         src = os.path.join(root, filename)
-        if src.endswith(".png"):
+        if src.lower().endswith(".png"):
             img = Image.open(src).convert('RGBA')
             img2 = premultiplyAlpha(img)
             img2.save(src)
